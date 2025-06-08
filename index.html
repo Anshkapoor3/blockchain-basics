@@ -1,0 +1,31 @@
+html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Blockchain Demo</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🔗 Basic Blockchain Demo</h1>
+        
+        <div class="blockchain" id="blockchain"></div>
+        
+        <div class="controls">
+            <button class="btn" onclick="tamperWithBlock1()">🔧 Tamper with Block 1</button>
+            <button class="btn fix" onclick="fixBlockchain()">🔧 Fix Blockchain</button>
+            <button class="btn" onclick="resetBlockchain()">🔄 Reset</button>
+        </div>
+        
+        <div class="log" id="log">
+            <h3>📝 Activity Log</h3>
+        </div>
+    </div>
+
+    <!-- Load JavaScript modules -->
+    <script src="js/crypto.js"></script>
+    <script src="js/block.js"></script>
+    <script src="js/blockchain.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
